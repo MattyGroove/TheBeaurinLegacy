@@ -3,6 +3,7 @@
 // Neera 
 CHAIN
 IF ~InParty("Neera")
+InParty("QI#Ela")
 See("Neera")
 !StateCheck("Neera",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
@@ -17,7 +18,8 @@ EXIT
 //Dorn
 CHAIN
 IF ~InParty("Dorn")
-See("Dorn")
+InParty("QI#Ela")
+See("QI#Ela")
 !StateCheck("Dorn",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
 Global("QI#ElaDorn1","GLOBAL",0)~ THEN BDORN QI#ElaDorn1
@@ -34,6 +36,7 @@ EXIT
 // Rasaad
 CHAIN
 IF ~InParty("Rasaad")
+InParty("QI#Ela")
 See("Rasaad")
 !StateCheck("Rasaad",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
@@ -49,6 +52,7 @@ EXIT
 // Hexxat
 CHAIN
 IF ~InParty("QI#Ela")
+InParty("Hexxat")
 See("QI#Ela")
 !StateCheck("Hexxat",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
@@ -66,7 +70,8 @@ EXIT
 // Hexxat
 CHAIN
 IF ~InParty("QI#Ela")
-See("QI#Ela")
+InParty("Hexxat")
+See("Hexxat")
 !StateCheck("Hexxat",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
 Global("QI#ElaHexxatToB1","GLOBAL",0)~ THEN QI#E25B QI#ElaHexxatToB1
@@ -80,7 +85,8 @@ EXIT
 //Rasaad
 CHAIN
 IF ~InParty("QI#Ela")
-See("QI#Ela")
+InParty("Rasaad")
+See("Rasaad")
 !StateCheck("Rasaad",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
 Global("RasaadRomanceActive","GLOBAL", 2)
@@ -93,7 +99,8 @@ EXIT
 
 //Dorn 
 CHAIN
-IF ~InParty("Dorn")
+IF ~InParty("QI#Ela")
+InParty("Dorn")
 See("Dorn")
 !StateCheck("Dorn",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
@@ -107,7 +114,8 @@ EXIT
 
 // Neera 
 CHAIN
-IF ~InParty("Neera")
+IF ~InParty("QI#Ela")
+InParty("Neera")
 See("Neera")
 !StateCheck("Neera",CD_STATE_NOTVALID)
 !StateCheck("QI#Ela",CD_STATE_NOTVALID)
